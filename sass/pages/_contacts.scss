@@ -1,0 +1,84 @@
+.assistance {
+  margin: 0 $space-small;
+  padding: $space-standard 0;
+
+  &__header {
+    h2 {
+      font-size: $text-standard;
+      font-weight: 600;
+    }
+  }
+
+  &__inquiries {
+    margin-top: $space-small;
+
+    &--text {
+      font-weight: 400;
+      text-align: justify;
+      margin-bottom: $space-sub;
+
+      font-size: $text-small;
+      line-height: 1.4;
+    }
+
+    &--sides {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: $space-small;
+      text-align: justify;
+      justify-content: flex-start;
+      margin-bottom: $space-sub;
+
+      &--per {
+        font-size: $text-mini;
+        font-weight: 400;
+
+        a {
+          &:link,
+          &:visited {
+            color: $color-alt-2;
+            color: $color-black;
+            text-decoration: none;
+            display: block;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__gallery {
+    margin-top: calc(#{$space-margin + $space-decent}/ 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--link {
+      text-align: center;
+      display: inline-block;
+      font-size: $text-mini;
+      text-decoration: none;
+      text-transform: capitalize;
+      background-color: $color-alt-2;
+      background-color: $color-main;
+      border-radius: 9px;
+      color: $color-white;
+      padding: $space-mini;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    }
+  }
+
+  &__credits {
+    margin-top: $space-widegap;
+
+    &--name {
+      font-size: $text-supersmall;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}

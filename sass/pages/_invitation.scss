@@ -1,0 +1,139 @@
+.invitation {
+  padding: $space-standard 0 $space-small 0;
+  background-color: $color-white;
+
+  &__header {
+    padding: 0 $space-small;
+    font-weight: 700;
+    margin-bottom: $space-small;
+    color: $color-main;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $text-emphasize;
+    font-size: calc(#{$text-emphasize + $text-standard}/ 2);
+  }
+
+  &__decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $space-mini;
+
+    &--logo {
+      height: $space-big;
+      width: auto;
+      margin-bottom: $space-mini;
+      transform: scale(1.25);
+      filter: brightness(1.15);
+    }
+
+    &--design {
+      height: $space-small;
+      width: auto;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: $space-small;
+    align-items: center;
+    justify-content: center;
+    padding: $space-small;
+    margin-top: $space-small;
+    background-color: $color-tint;
+    background-color: $color-main;
+    border-radius: 9px;
+    box-shadow: 0px 1rem 2rem rgba($color-black, 0.05);
+
+    &--row {
+      display: flex;
+      gap: $space-mini;
+      align-items: center;
+      justify-content: center;
+
+      &--icon {
+        font-size: $text-standard;
+        font-size: $text-small;
+        color: $color-white;
+      }
+
+      &--txt {
+        font-size: calc(#{$text-small + $text-mini}/ 2);
+        font-size: $text-mini;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.4;
+      }
+
+      &--desc {
+        font-size: calc(#{$text-mini + $text-supersmall}/ 2);
+        font-size: $text-supersmall;
+        color: $color-main;
+        text-align: center;
+        padding: 0 $space-small;
+        line-height: 1.8;
+      }
+
+      &--col {
+        flex-direction: column;
+        margin-top: $space-small;
+        padding: $space-mini 0 $space-small;
+        background-color: $color-main;
+        border-radius: 9px;
+        box-shadow: 0px 1rem 2rem rgba($color-black, 0.05);
+      }
+
+      &--header {
+        font-size: $text-small;
+        font-weight: 400;
+        color: $color-white;
+
+        span {
+          margin-left: $space-mini;
+        }
+      }
+
+      &--link {
+        display: block;
+        color: $color-white;
+        font-size: calc(#{$text-small + $text-mini}/ 2);
+        text-decoration: none;
+        padding-bottom: $space-supersmall;
+        border-bottom: 2px solid $color-white;
+
+        &:not(:last-child) {
+          margin-bottom: $space-supersmall;
+        }
+      }
+
+      &--map {
+        margin-top: $space-small;
+        position: relative;
+
+        &--frame {
+          margin: 0 auto;
+          width: calc(#{$space-big * 2});
+          height: calc(#{$space-big * 1.5});
+        }
+
+        &--link {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 3;
+        }
+      }
+    }
+  }
+
+  &__secondary {
+    margin-top: $space-small;
+    background-color: $color-white;
+  }
+}

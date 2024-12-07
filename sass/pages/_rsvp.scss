@@ -1,0 +1,145 @@
+.rsvp {
+  text-align: center;
+  background-color: $color-white;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: $space-small 0;
+
+    &--main {
+      font-size: $text-emphasize;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &--sub {
+      font-size: $text-small;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__form {
+    &--form {
+      padding: $space-small $space-mini;
+      background-color: $color-white;
+      background-color: $color-main;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $space-small;
+    }
+
+    &--question {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: start;
+
+      &--label {
+        color: $color-main;
+        color: $color-white;
+        font-family: inherit;
+        font-size: $text-small;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+
+      &--input {
+        color: $color-main;
+        background-color: $color-white;
+        display: block;
+        font-family: inherit;
+        font-size: $text-mini;
+        padding: $space-mini;
+        width: 100%;
+      }
+
+      &--radio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: $space-supersmall;
+        font-size: calc(#{$text-mini + $text-supersmall}/ 2);
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: $space-supersmall;
+        }
+
+        label {
+          color: $color-black;
+          color: $color-white;
+        }
+      }
+    }
+
+    &--submit {
+      padding: calc(#{$space-supersmall + $space-mini}/ 2) $space-small;
+      font-size: $text-small;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: $color-white;
+      color: $color-main;
+      background-color: $color-black;
+      background-color: $color-white;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.05);
+      margin-top: $space-supersmall;
+      display: block;
+      margin-left: auto;
+      font-size: $text-mini;
+      // transform: translateY(-95%);
+      transition: all 0.3s;
+
+      &--complete {
+        background-color: $color-alt-1;
+
+        &:hover {
+          cursor: pointer;
+          transform: translateY(-2px) scale(1.05);
+          box-shadow: 0 2rem 4rem rgba($color-black, 0.025);
+        }
+
+        &:active {
+          transform: translateY(0) scale(0.95);
+          box-shadow: 0 1rem 2rem rgba($color-black, 0.05);
+        }
+      }
+    }
+  }
+
+  &__submitted {
+    margin: 0 $space-mini;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: $space-mini;
+    display: none;
+
+    &--header {
+      font-size: $text-mini;
+      font-weight: 400;
+      margin: $space-small 0;
+    }
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      gap: $space-mini;
+
+      h3 {
+        text-align: justify;
+        font-size: $text-mini;
+        font-weight: 300;
+      }
+    }
+  }
+}

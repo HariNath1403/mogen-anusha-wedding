@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/Decoration/logo free.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mogen & Anusha | Wedding E-Invite</title>
+  </head>
+  <body>
+    <div class="workspace container" id="workspace">
+      <div id="overlay" style="display: none">
+        <div class="spinner"></div>
+      </div>
+      <div class="main" id="main">
+        <section id="home" class="home container">
+          <!-- <section id="nav" class="nav">NAV</section> -->
+          <div class="home__background">
+            <div class="img__menu">
+              <a class="img__menu--btn">
+                <svg width="24" height="18">
+                  <rect width="24" height="2" rx="1"></rect>
+                  <rect y="8" width="24" height="2" rx="1"></rect>
+                  <rect y="16" width="24" height="2" rx="1"></rect>
+                </svg>
+                <span>Menu</span>
+              </a>
+            </div>
+            <div class="home__background--txt">
+              <h2 class="home__background--txt--header">
+                <span class="home__background--txt--header--name"
+                  >Mogen Selvaraja</span
+                >
+                <span>&#10084;</span>
+                <span class="home__background--txt--header--name"
+                  >Anusha Palaniandy</span
+                >
+              </h2>
+              <h4 class="home__background--txt--sub">
+                We would be honored to have you join us in celebrating our
+                wedding. Your presence will add joy to our special day.
+              </h4>
+            </div>
+            <button class="home__button home__button--left">&larr;</button>
+            <button class="home__button home__button--right">&rarr;</button>
+          </div>
+        </section>
+        <section class="container invitation section" id="invitation">
+          <h2 class="invitation__header">Wedding Invite</h2>
+
+          <div class="invitation__decor">
+            <img
+              src="images/Decoration/flowers full 2.png"
+              alt="Flowers"
+              class="invitation__decor--design"
+            />
+            <img
+              src="images/Decoration/logo free.png"
+              alt="Logo"
+              class="invitation__decor--logo"
+            />
+            <img
+              src="images/Decoration/flowers full 2.png"
+              alt="Flowers"
+              class="invitation__decor--design"
+            />
+          </div>
+
+          <div class="invitation__box">
+            <div class="invitation__box--row">
+              <ion-icon
+                name="calendar"
+                class="invitation__box--row--icon"
+              ></ion-icon>
+              <h3 class="invitation__box--row--txt">Friday, Jan 31, 2025</h3>
+            </div>
+            <div class="invitation__box--row">
+              <ion-icon
+                name="time"
+                class="invitation__box--row--icon"
+              ></ion-icon>
+              <h3 class="invitation__box--row--txt">
+                From 9.30 am to 11.20 am
+              </h3>
+            </div>
+            <div class="invitation__box--row">
+              <ion-icon
+                name="navigate-circle"
+                class="invitation__box--row--icon"
+              ></ion-icon>
+              <h3 class="invitation__box--row--txt">
+                <span>Kati Estate</span>
+                <span>Murugan Temple</span>
+              </h3>
+            </div>
+          </div>
+          <div class="invitation__secondary">
+            <div class="invitation__box--row">
+              <p class="invitation__box--row--desc">
+                Kati Estate Murugan Temple, 33050 Sauk, Perak
+              </p>
+            </div>
+            <div class="invitation__box--row invitation__box--row--col">
+              <!-- <div class="invitation__box--row--map">
+              <iframe
+                frameborder="0"
+                style="border: 0"
+                src="https://embed.waze.com/iframe?zoom=16&lat=2.985213&lon=101.523907"
+                allowfullscreen
+                class="invitation__box--row--map--frame"
+              >
+              </iframe>
+              <a
+                class="invitation__box--row--map--link"
+                href="https://www.waze.com/live-map/directions?to=ll.2.985213%2C101.523907"
+                target="_blank"
+                >&nbsp;</a
+              >
+            </div> -->
+              <h2 class="invitation__box--row--header">
+                <ion-icon name="map"></ion-icon>
+                <span>Navigation</span>
+              </h2>
+              <a
+                href="https://www.waze.com/live-map/directions?to=ll.4.920523%2C100.919702"
+                target="_blank"
+                class="invitation__box--row--link"
+              >
+                Waze</a
+              >
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=4.920523,100.919702
+              "
+                target="_blank"
+                class="invitation__box--row--link"
+              >
+                Maps</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="container rsvp section" id="rsvp">
+          <div class="rsvp__header">
+            <h2 class="rsvp__header--main">RSVP Here</h2>
+            <h2 class="rsvp__header--sub">By 19 Jan 2025</h2>
+          </div>
+          <form name="submit-to-google-sheet" class="rsvp__form--form">
+            <div class="rsvp__form--container">
+              <div class="rsvp__form--question">
+                <label for="entry.152477188" class="rsvp__form--question--label"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  name="Full Name"
+                  placeholder="Name (in Proper Case)"
+                  id="form-name"
+                  required
+                  class="rsvp__form--question--input"
+                />
+              </div>
+              <div class="rsvp__form--question">
+                <label
+                  for="entry.1818471564"
+                  class="rsvp__form--question--label"
+                  >Phone No.</label
+                >
+                <input
+                  type="text"
+                  name="Phone No"
+                  placeholder="Contact No (without +, -)"
+                  id="form-phone"
+                  required
+                  pattern="\d{10,11}"
+                  class="rsvp__form--question--input"
+                />
+              </div>
+              <div class="rsvp__form--question">
+                <label
+                  for="entry.2018856377"
+                  class="rsvp__form--question--label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="Email Address"
+                  placeholder="A valid email address"
+                  id="form-email"
+                  required
+                  class="rsvp__form--question--input"
+                />
+              </div>
+              <div class="rsvp__form--question">
+                <label for="entry.910894803" class="rsvp__form--question--label"
+                  >No. of Pax</label
+                >
+                <input
+                  type="text"
+                  name="No of Pax"
+                  placeholder="No of Pax (whole number)"
+                  id="form-pax"
+                  required
+                  pattern="[1-9]\d*"
+                  class="rsvp__form--question--input"
+                />
+              </div>
+              <div class="rsvp__form--question">
+                <label class="rsvp__form--question--label">Affiliation</label>
+                <div class="rsvp__form--question--radio">
+                  <div>
+                    <input
+                      type="radio"
+                      id="form-grooms-side"
+                      name="Affiliation"
+                      value="Groom's side"
+                    />
+                    <label for="form-grooms-side">Groom's side</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="form-brides-side"
+                      name="Affiliation"
+                      value="Bride's side"
+                    />
+                    <label for="form-brides-side">Bride's side</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="form-others"
+                      name="Affiliation"
+                      value="Others"
+                    />
+                    <label for="form-others">Others</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="rsvp__form--submit">Submit</button>
+          </form>
+          <div class="rsvp__submitted">
+            <h2 class="rsvp__submitted--header">🥳 Submission Confirmed</h2>
+            <div class="rsvp__submitted--text">
+              <h3>
+                Thank you for your submission. Please let us know if you need to
+                edit your submission.
+              </h3>
+              <h3>Please refresh the page to submit another RSVP request.</h3>
+              <h3>
+                We eagerly anticipate your presence and are looking forward to
+                seeing you at the event.
+              </h3>
+            </div>
+          </div>
+        </section>
+        <section class="container section" id="assistance">
+          <div class="content__page">
+            <div class="assistance">
+              <div class="assistance__header">
+                <h2>Need Assistance?</h2>
+              </div>
+              <div class="assistance__inquiries">
+                <p class="assistance__inquiries--text">
+                  For any enquiries, please contact the respective numbers below
+                  via WhatsApp:
+                </p>
+                <ul class="assistance__inquiries--sides">
+                  <li class="assistance__inquiries--sides--per">
+                    <span>Groom's Side</span>
+                    <span>:</span> <br />
+                    <a href="whatsapp://send?phone=+60163027704"
+                      >&mdash; Mr. Logeshwaran</a
+                    >
+                    <a href="whatsapp://send?phone=+601162629223"
+                      >&mdash; Mr. Aman</a
+                    >
+                  </li>
+                  <li class="assistance__inquiries--sides--per">
+                    <span>Bride's Side</span>
+                    <span>:</span> <br />
+                    <a href="whatsapp://send?phone=+60133808120"
+                      >&mdash; Ms. Vinosyah</a
+                    >
+                    <a href="whatsapp://send?phone=+60132015754"
+                      >&mdash; Mr. Lingeeshwaran</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="assistance__gallery">
+                <a href="#" class="assistance__gallery--link link--gallery"
+                  >Explore the Gallery
+                </a>
+              </div> -->
+              <div class="assistance__credits">
+                <h4 class="assistance__credits--name">
+                  &copy; Developed by Hari
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="navigation navigation--hide" id="navigation">
+          <button class="navigation__exit">X</button>
+          <div class="navigation__content">
+            <img
+              src="images/Decoration/logo free.png"
+              alt="Logo"
+              class="navigation__logo"
+            />
+            <h2 class="navigation__header">Mogen & Anusha</h2>
+            <ul class="navigation__list">
+              <li>
+                <a href="#invitation" class="navigation__list--link"
+                  >&mdash; Venue Details</a
+                >
+              </li>
+              <li>
+                <a href="#rsvp" class="navigation__list--link">&mdash; RSVP</a>
+              </li>
+              <li>
+                <a href="#assistance" class="navigation__list--link"
+                  >&mdash; Contact Us</a
+                >
+              </li>
+              <!-- <li>
+                <a href="#" class="navigation__list--link link--gallery">
+                  &mdash; Gallery</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          <div class="navigation__cta">
+            <a href="#rsvp" class="navigation__cta--btn">RSVP</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- <div class="gallery" id="gallery">
+        <div class="gallery__back">
+          <button class="gallery__back--cta">&larr; Back</button>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__grid--pic">
+            <img src="images/Gallery/pic 1.jpeg" alt="Pre-Wedding Pictures" />
+          </figure>
+        </div>
+      </div> -->
+      <div class="music">
+        <button class="music__btn">
+          <ion-icon name="musical-notes" class="music__btn--icon"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.home {
+  &__background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    max-height: 100vh;
+    overflow: hidden;
+
+    &--txt {
+      position: absolute;
+      bottom: $space-mini;
+      left: 0;
+      background-color: rgba($color-tint, 0.75);
+      padding: $space-mini;
+      text-align: center;
+
+      &--header {
+        text-transform: capitalize;
+        // background-image: linear-gradient(
+        //   to top right,
+        //   $color-black,
+        //   $color-alt-1,
+        //   $color-black
+        // );
+        color: $color-main;
+        // color: transparent;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        font-size: $text-emphasize;
+        font-weight: 700;
+        margin-bottom: $space-small;
+        display: flex;
+        align-items: center;
+
+        &--name {
+          font-size: $text-small;
+          line-height: 1.8;
+          padding: 0 $space-supersmall;
+          text-transform: uppercase;
+        }
+      }
+
+      &--sub {
+        font-size: calc(#{$text-mini + $text-supersmall}/ 2);
+        font-weight: 400;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba($color-main, 0.65);
+    color: $color-white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    padding: $space-small;
+    cursor: pointer;
+    font-size: $text-standard;
+    font-weight: 700;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+
+    &:active,
+    &:hover {
+      background-color: $color-main;
+    }
+
+    &--left {
+      left: $space-small;
+    }
+
+    &--right {
+      right: $space-small;
+    }
+  }
+}
